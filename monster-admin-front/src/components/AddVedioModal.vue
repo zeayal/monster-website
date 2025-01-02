@@ -8,13 +8,13 @@
       @ok="handleOk"
     >
       <!-- 上传视频 -->
-      <UploadVideo />
+      <UploadVideoModal />
     </a-modal>
   </div>
 </template>
 <script lang="ts" setup>
 import { ref } from 'vue'
-import UploadVideo from './UploadVideo.vue'
+import UploadVideoModal from './UploadVidel.vue'
 
 const open = ref<boolean>(false)
 const confirmLoading = ref<boolean>(false)
