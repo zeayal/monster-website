@@ -34,7 +34,7 @@ export class VideoService {
     }
   }
 
-  static async uploadVideo(file: Express.Multer.File): Promise<Video> {
+  static async uploadVideo(file: Express.Multer.File): Promise<any> {
     this.ensureInitialized();
 
     const filename = `videos/${Date.now()}-${file.originalname}`;
